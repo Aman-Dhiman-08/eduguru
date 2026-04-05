@@ -1,0 +1,39 @@
+/* Floating call button */
+.float-call {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy-dark);
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(255,215,0,0.4);
+  opacity: 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  animation: floatBounce 2.5s ease-in-out infinite;
+}
+
+.float-call.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+
+.float-call:hover {
+  box-shadow: 0 8px 30px rgba(255,215,0,0.6);
+  animation: none;
+  transform: scale(1.1);
+}
+
+@keyframes floatBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-8px) scale(1); }
+}
