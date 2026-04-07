@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="hero-overlay" />
 
       <div className="hero-content">
-        <span className="hero-badge">✦ Admissions Open 2025–26 ✦</span>
+        <span className="hero-badge">✦ Admissions Open 2026–27 ✦</span>
         <h1 className="hero-title">
           EDU<span>GURUS</span>
         </h1>
